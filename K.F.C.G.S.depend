@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1463507922 source:d:\create\programy c++\cansat'16\k.f.c.g.s\main.cpp
+	<iostream>
+	<stdio.h>
+	<conio.h>
+	"Data_collection.h"
+	"Data_display.h"
+	"State_ctrl.h"
+	"misssion_managment.h"
+
+1462716036 d:\create\programy c++\cansat'16\k.f.c.g.s\init.h
+
+1462716055 d:\create\programy c++\cansat'16\k.f.c.g.s\check_satelite.h
+
+1463493513 d:\create\programy c++\cansat'16\k.f.c.g.s\data_collection.h
+
+1463508753 d:\create\programy c++\cansat'16\k.f.c.g.s\data_display.h
+
+1463508829 d:\create\programy c++\cansat'16\k.f.c.g.s\state_ctrl.h
+
+1463494318 d:\create\programy c++\cansat'16\k.f.c.g.s\misssion_managment.h
+
