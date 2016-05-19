@@ -1,6 +1,7 @@
+<pre>
 # K.F.C.G.S
 Source Code For Satelite PC Part
- That's enviroment for managing lander, recieving data and displaying it.
+ That's enviroment for managing lander, recieving data and displaying it. 
                          DESIGN ASSUMPTIONS
 
   1. Comfortable display researched data in charts and analisys of test results.
@@ -39,3 +40,4 @@ Source Code For Satelite PC Part
 
 
  To be updated.                                       Writtten by Juzeg
+</pre>
