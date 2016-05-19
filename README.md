@@ -1,10 +1,10 @@
 # K.F.C.G.S
 Source Code For Satelite PC Part
  That's enviroment for managing lander, recieving data and displaying it.
-                         PROJECT OBJECTIVES
+                         DESIGN ASSUMPTIONS
 
   1. Comfortable display researched data in charts and analisys of test results.
-  2. Present the state of the CanSat.
+  2. Present the state of the CanSat. 
      2.1 Physical condition.
      2.2 Resources and consumption of resources (battery etc.).
      2.3 The efficiency of the system.
