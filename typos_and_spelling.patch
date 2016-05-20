@@ -1,0 +1,38 @@
+diff --git a/README.md b/README.md
+index 0a1a0af..193476e 100644
+--- a/README.md
++++ b/README.md
+@@ -1,11 +1,11 @@
+ <pre>
+ # K.F.C.G.S
+ Source Code For Satelite PC Part
+- That's enviroment for managing lander, recieving data and displaying it. 
+-                         DESIGN ASSUMPTIONS
++ That's the enviroment for managing lander, receieving data and displaying it.
++                         DESIGN GOALS
+ 
+-  1. Comfortable display researched data in charts and analisys of test results.
+-  2. Present the state of the CanSat. 
++  1. Comfortable display researched data in charts and analysis of test results.
++  2. Present the state of the CanSat.
+      2.1 Physical condition.
+      2.2 Resources and consumption of resources (battery etc.).
+      2.3 The efficiency of the system.
+@@ -15,14 +15,14 @@ Source Code For Satelite PC Part
+      3.1 Current time.
+      3.2 Events.
+      3.3 Commands sent.
+-     3.4 Rapid changes of the sensors feedback.
++     3.4 Rapid changes of the sensors readings.
+      3.5 Comments to the course of the mission.
+- 4.Management of the CanSat
++  4. Management of the CanSat
+      4.1 Directing the rover.
+      4.2 Updating guidelines.
+      4.3 Setting the frequency of communication.
+      4.4 Activating failure modes.
+- 5.Check before take-off
++  5. Check before take-off
+      5.1 Physical condition.
+      5.2 The functionality of the sensors.
+      5.3 Resources.
