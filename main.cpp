@@ -10,7 +10,7 @@ using namespace std;
 int main()
 {
     std::string Command;
-    std::cout << "Baeta orks" << std::endl;
+    std::cout << "Beta works" << std::endl;
 
 
 
