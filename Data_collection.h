@@ -1,11 +1,31 @@
 #ifndef DATA_COLLECTION_H_INCLUDED
 #define DATA_COLLECTION_H_INCLUDED
 #include "rs232.h"
-int Data_gain ()
+#include "fstream"
+int Data_gain (std::string Command)
 {
 
-    int i, n,
-          cport_nr=16,        /* /dev/ttyS0 (COM1 on windows) */
+
+  std::ofstream datalog( "datalog.txt" );
+       datalog.open( "datalog.txt", std::ios::in | std::ios::out );
+       if( datalog.good() == true )
+       {
+           std::cout << "            Data loggin file works fine" << std::endl;
+           //tu operacje na pliku
+       } else std::cout << "            Data loggin file went to hell" << std::endl;
+
+
+
+
+    int i, n, cport_nr,bdrate;
+            if(Command.substr(0,7) == "portset")
+                   {
+
+                     std::string converthelper;
+                     converthelper = Command.substr(8,10);
+                            cport_nr = atoi( converthelper.c_str() );
+                 }
+      else{     cport_nr=16; }
           bdrate=9600;       /* 9600 baud */
 
       unsigned char buf[4096];
@@ -13,14 +33,15 @@ int Data_gain ()
       char mode[]={'8','N','1',0};
 
 
-      if(RS232_OpenComport(cport_nr, bdrate, mode))
+      if(RS232_OpenComport(cport_nr, bdrate, mode)  )
       {
-        printf("Can not open comport\n");
+
 
         return(0);
       }
+      else {printf("Comport opened succefully."); }
 
-      while(1)
+      while(1 || (Command == "log usb data"))
       {
         n = RS232_PollComport(cport_nr, buf, 4095);
 
@@ -36,7 +57,9 @@ int Data_gain ()
             }
           }
 
-          printf("%s\n",  (char *)buf);
+                      printf("%s\n",  (char *)buf);
+                      datalog << (char *)buf;
+
         }
 
     #ifdef _WIN32
@@ -52,7 +75,7 @@ int Data_gain ()
 
 
 
-
+ datalog.close();
     std::cout << "Data succefully gained from device!" <<std::endl;
     return 0 ;
 }

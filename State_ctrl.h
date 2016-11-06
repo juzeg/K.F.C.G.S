@@ -5,7 +5,7 @@ int State_controll (std::string Command)
 {
 
 
-    std::cout << "Managig some state stuff in bacground " << std::endl ;
+    std::cout << "Managing some state stuff in bacground " << std::endl ;
 
  if ( Command.substr(0,5) == "state")
  {

@@ -3,7 +3,7 @@
 
 int Data_show (std::string Command)
 {
-  std::cout << "Managig some data stuff in bacground " << std::endl ;
+  std::cout << "Managing some data stuff in bacground " << std::endl ;
 
     if ( Command.substr(0,4) == "data")
     {
